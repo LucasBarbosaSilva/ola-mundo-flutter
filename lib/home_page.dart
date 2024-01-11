@@ -24,10 +24,21 @@ class HomePageState extends State<HomePage>{
         height: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text("Contator $counter"),
-            CustomSwitch()
+            Container(height: 20),
+            CustomSwitch(),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(height: 50, width: 50, color: Colors.red,),
+                Container(height: 50, width: 50, color: Colors.red,),
+                Container(height: 50, width: 50, color: Colors.red,),
+              ],
+            )
           ],
         ),
       ),
